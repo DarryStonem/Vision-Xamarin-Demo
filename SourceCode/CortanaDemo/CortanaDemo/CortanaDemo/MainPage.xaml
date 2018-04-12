@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CortanaDemo.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:CortanaDemo">
+
+    <StackLayout Margin="20">
+        <Button Clicked="OnTakePhotoButtonClicked" Text="¿Emocionado?" />
+        <Image x:Name="image" />
+        <ActivityIndicator x:Name="activityIndicator" IsRunning="False" />
+        <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+            <Label Text="Description:" />
+            <Label x:Name="emotionResultLabel" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
